@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Los Pollos Hermanos</title>
+        <meta charset="utf-8"/>
+        <meta description="Hello! And welcome to the Los Pollos Hermanos Family."/>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <div class="header-img" id="survey-img">
+                <a href="home.html">
+                    <img src="images/lph-logos.png" class="lph-logo">
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="survey.html">Rate Us</a></li>
+                    <li><a href="mailto:zezomostafa130@gmail.com">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-layout>
+            <div class="centered-content survey-content">
+                <div class="survey-reviews-grid">
+                    <!-- Survey Column -->
+                    <div class="survey-container">
+                        <h3>Share Your Feedback</h3>
+                        <form>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="n" placeholder="e.g., Ali Mohamed" required />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="em" placeholder="e.g., ali@example.com" required />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="number">Phone Number <span class="optional">(optional)</span></label>
+                                <input type="text" id="number" name="nu" placeholder="e.g., +201234567890" maxlength="13" />
+                            </div>
+
+                            <!-- Gender -->
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="gen" value="male" required />
+                                        Male ♂
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gen" value="female" required />
+                                        Female ♀
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Review -->
+                            <div class="form-group">
+                                <label for="review">Your Review</label>
+                                <textarea id="review" name="re" placeholder="We’d love to hear your thoughts!" required></textarea>
+                            </div>
+
+                            <hr />
+
+                            <!-- Buttons -->
+                            <div class="form-buttons form-actions">
+                                <input class="btn-submit" type="submit" value="Submit Review" />
+                                <input class="btn-reset" type="reset" value="Clear Form" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Reviews Column -->
+                    <div class="reviews" id="reviews-container">
+                        <h3>Customer Feedback</h3>
+                        <div id="reviews-list" class="reviews-list">
+                            <!-- Reviews will be added here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact-info">
+                <P class="follow-us">Follow Me</P>
+                <a class="icon-container" href="https://www.facebook.com/moatazelsayadfb" target="_blank">
+                    <img src="images/facebook-icon.svg" class="icon" alt="Facebook">
+                    <span class="icon-label">Facebook</span>
+                </a>
+
+                <a class="icon-container" href="https://www.x.com/moatazmelsayaad" target="_blank">
+                    <img src="images/x-icon.svg" class="icon" alt="X">
+                    <span class="icon-label">X</span>
+                </a>
+
+                <a class="icon-container" href="https://www.linkedin.com/in/moataz-elsayad-b2b748223" target="_blank">
+                    <img src="images/linkedin-icon.svg" class="icon" alt="LinkedIn">
+                    <span class="icon-label">LinkedIn</span>
+                </a>
+
+                <a class="icon-container" href="https://www.github.com/moatazelsayad" target="_blank">
+                    <img src="images/github-icon.svg" class="icon" alt="GitHub">
+                    <span class="icon-label">GitHub</span>
+                </a>
+
+                <div class="contact-links">
+                    <div class="contact-link-row">
+                        <img src="images/email-icon.svg" class="contact-icon" alt="Email">
+                        <a class="contact-link" href="mailto:zezomostafa130@gmail.com">zezomostafa130@gmail.com</a>
+                    </div>
+                    <div class="contact-link-row">
+                        <img src="images/phone-icon.svg" class="contact-icon" alt="Phone">
+                        <a class="contact-link" href="tel:+201030238490">+0201030238490</a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/Los_Pollos.webp" class="footer-logo" href="#header-img">
+
+            <div class="rights">
+                <div class="rights-content">
+                    <div class="disclaimer-div">
+                        <span class="disclaimer">This website is created for entertainment purposes only. It is not a real restaurant, and some design elements have been inspired by other websites.</span>
+                    </div>
+                    <div class="copy-div">
+                        <span class="copyright">&copy; 2025 Moataz ElSayad. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button id="back-to-top" title="Back to top">&#8679;</button>
+        <script src="scripts/reviews.js"></script>
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
