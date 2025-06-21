@@ -823,10 +823,6 @@ video {
     background-image: url(../images/header-survey.jpg);
 }
 
-.survey-content {
-    text-align: center;
-}
-
 .survey-reviews-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
