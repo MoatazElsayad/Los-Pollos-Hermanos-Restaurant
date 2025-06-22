@@ -1021,3 +1021,25 @@ form input[type="reset"]:hover {
 .remove-review-btn:focus .remove-icon {
     filter: invert(92%) sepia(99%) saturate(7492%) hue-rotate(359deg) brightness(97%) contrast(108%);
 }
+
+@media (max-width: 900px) {
+    .main-layout {
+        align-items: center;
+    }
+    .survey-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+        align-items: center;
+        justify-items: center; /* Center children horizontally */
+    }
+    .survey-container,
+    .reviews {
+        max-width: 600px;   /* or your preferred max width */
+        width: 100%;
+        margin: 0 auto;     /* Center the divs */
+    }
+    .reviews {
+        margin-left: 0;
+    }
+}
