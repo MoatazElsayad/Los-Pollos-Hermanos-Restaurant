@@ -60,7 +60,7 @@ export const products = {
         },
         {
             id: 'a005',
-            image: 'images/bread.jpg',
+            image: 'images/bread.JPG',
             name: 'Bread',
             description: '3 Extra Loaves of Frech Bread',
             price: 12
